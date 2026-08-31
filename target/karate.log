@@ -1,0 +1,1910 @@
+11:58:10.569 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee
+11:58:11.647 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:58:11.655 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+11:58:12.816 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:58:13.605 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/public/employees
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 169
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"tennille.raynor@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+11:58:14.083 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 465
+1 < 201
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 09:58:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 309
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"135-UIdH5DeoK+zdRhP4dw/ddP9lxcU"
+{"message":"Employee created.","data":{"id":749,"firstName":"Alicjhjhe","lastName":"Dupont","email":"tennille.raynor@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T09:58:14.168Z","updatedAt":"2026-08-31T09:58:14.168Z"}}
+
+11:58:14.150 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://api.efi-academy.com/public/employees/749
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 19
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+11:58:14.404 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 254
+2 < 200
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 09:58:14 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 303
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"12f-dxABflLRwt8OeKRZY0VCacmyIo0"
+{"message":"Employee updated.","data":{"id":749,"firstName":"Lam","lastName":"Dupont","email":"tennille.raynor@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T09:58:14.168Z","updatedAt":"2026-08-31T09:58:14.525Z"}}
+
+11:58:14.411 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.efi-academy.com/public/employees/749
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+11:58:14.561 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 149
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 09:58:14 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 35
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"23-z3FL4E3yFVQZK/x7mrnk+x1Lr4g"
+{"message":"Employee 749 deleted."}
+
+11:58:14.583 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > PUT https://api.efi-academy.com/public/employees/2
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 184
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+11:58:14.663 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 80
+4 < 404
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 09:58:14 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 54
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+11:58:14.667 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:83
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 80, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:83
+11:58:16.061 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+11:59:20.148 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee
+11:59:21.086 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:59:21.089 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788170361088
+11:59:21.095 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+11:59:22.211 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:59:22.980 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/public/employees
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 166
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"isaac.harber@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+11:59:23.427 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 445
+1 < 201
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 09:59:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 306
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"132-zulXyujFFdfmkZlvbxii8P69FYY"
+{"message":"Employee created.","data":{"id":750,"firstName":"Alicjhjhe","lastName":"Dupont","email":"isaac.harber@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T09:59:23.539Z","updatedAt":"2026-08-31T09:59:23.539Z"}}
+
+11:59:23.466 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://api.efi-academy.com/public/employees/750
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 19
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+11:59:23.627 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 161
+2 < 200
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 09:59:23 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 300
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"12c-GdB04VBviDPrUaJEtu3utvtzTQk"
+{"message":"Employee updated.","data":{"id":750,"firstName":"Lam","lastName":"Dupont","email":"isaac.harber@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T09:59:23.539Z","updatedAt":"2026-08-31T09:59:23.749Z"}}
+
+11:59:23.650 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.efi-academy.com/public/employees/750
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+11:59:23.831 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 181
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 09:59:23 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 35
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"23-zb7PqTxnMqmMJqLx2I5B8qqse8c"
+{"message":"Employee 750 deleted."}
+
+11:59:23.845 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > PUT https://api.efi-academy.com/public/employees/2
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 184
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+11:59:23.917 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 72
+4 < 404
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 09:59:24 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 54
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+11:59:23.920 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:83
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 72, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:83
+11:59:24.934 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+12:01:03.827 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee
+12:01:04.809 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:01:04.811 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788170464809
+12:01:04.817 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:01:05.891 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:01:06.568 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/public/employees
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 167
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"catrice.mills@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+12:01:06.995 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 422
+1 < 201
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 10:01:07 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 307
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"133-GA6R/HQ+5MZ0WkF5M6FOTGpF+Vs"
+{"message":"Employee created.","data":{"id":752,"firstName":"Alicjhjhe","lastName":"Dupont","email":"catrice.mills@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T10:01:07.085Z","updatedAt":"2026-08-31T10:01:07.085Z"}}
+
+12:01:07.050 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://api.efi-academy.com/public/employees/752
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 19
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+12:01:07.148 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 97
+2 < 200
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 10:01:07 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 301
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"12d-e95wUhECuDUjPw4dlzBdPAcIjBQ"
+{"message":"Employee updated.","data":{"id":752,"firstName":"Lam","lastName":"Dupont","email":"catrice.mills@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T10:01:07.085Z","updatedAt":"2026-08-31T10:01:07.275Z"}}
+
+12:01:07.157 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.efi-academy.com/public/employees/752
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+12:01:07.316 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 157
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 10:01:07 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 35
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"23-P2nJKLoNrMRtz4/aeSjio68gvx4"
+{"message":"Employee 752 deleted."}
+
+12:01:07.343 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > PUT https://api.efi-academy.com/public/employees/2
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 184
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+12:01:07.534 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 191
+4 < 404
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 10:01:07 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 54
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+12:01:07.537 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:83
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 191, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:83
+12:01:08.488 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+12:03:15.569 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee
+12:03:16.478 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:03:16.483 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788170596478
+12:03:16.487 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:03:17.709 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:03:18.355 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/public/employees
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 162
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"don.hand@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+12:03:18.671 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 316
+1 < 201
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 10:03:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 302
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"12e-UIFe6ryhsrJJgURZUFgJp4DCb7Q"
+{"message":"Employee created.","data":{"id":756,"firstName":"Alicjhjhe","lastName":"Dupont","email":"don.hand@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T10:03:18.793Z","updatedAt":"2026-08-31T10:03:18.793Z"}}
+
+12:03:18.698 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://api.efi-academy.com/public/employees/756
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 19
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+12:03:18.937 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 239
+2 < 200
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 10:03:19 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 296
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"128-sfCGjDFFs5PB2u/8kEfwnN6ibKE"
+{"message":"Employee updated.","data":{"id":756,"firstName":"Lam","lastName":"Dupont","email":"don.hand@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T10:03:18.793Z","updatedAt":"2026-08-31T10:03:19.061Z"}}
+
+12:03:18.963 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.efi-academy.com/public/employees/756
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+12:03:19.147 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 183
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 10:03:19 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 35
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"23-dv/SNEe4qtX3ERgJ+jXYqbMHnTE"
+{"message":"Employee 756 deleted."}
+
+12:03:19.167 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > PUT https://api.efi-academy.com/public/employees/2
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 184
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+12:03:19.305 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 138
+4 < 404
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 10:03:19 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 54
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+12:03:19.305 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:83
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 138, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:83
+12:03:20.251 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+12:23:17.417 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployees
+12:23:18.236 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:23:18.238 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788171798236
+12:23:18.243 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:24:40.611 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployees
+12:24:41.417 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:24:41.419 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788171881417
+12:24:41.426 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:27:18.500 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployees2
+12:27:19.446 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:27:19.450 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788172039448
+12:27:19.469 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:27:41.100 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee2
+12:27:42.005 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:27:42.005 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788172062005
+12:27:42.018 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:27:43.180 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:27:43.830 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"admin123"}
+
+12:27:44.445 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 611
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 10:27:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 561
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"231-35D4rL4IggSpV/J9K+I/rasu+2E"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzIwNjQsImV4cCI6MTc4ODE3NTY2NH0.ijZIrutyc7isynorLZjZjZRtOjzKrPX3fBom7gOGafo","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzIwNjQsImV4cCI6MTc4ODc3Njg2NH0.2em1wMez4DKix8Jw018nHclU_7aF71U2IBEJto2jr20","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+
+12:27:44.466 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://api.efi-academy.com/api/employees
+2 > Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzIwNjQsImV4cCI6MTc4ODE3NTY2NH0.ijZIrutyc7isynorLZjZjZRtOjzKrPX3fBom7gOGafo
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 166
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"horace.kub@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+12:27:44.584 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 118
+2 < 401
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 10:27:44 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 86
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"56-II6CpFm9Mjj6dru+EiblGsS5qOM"
+{"message":"Authentication required. Please provide a valid Bearer token.","code":401}
+
+12:27:44.586 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:99
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 118, url: https://api.efi-academy.com/api/employees, response: 
+{"message":"Authentication required. Please provide a valid Bearer token.","code":401}
+classpath:examples/employees/employees.feature:99
+12:27:45.560 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+13:22:43.610 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee2
+13:22:44.376 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:22:44.376 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788175364376
+13:22:44.384 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+13:22:45.291 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:46.068 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"admin123"}
+
+13:22:46.606 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 538
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 11:22:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 561
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"231-VaXmgd2c0F6bA4mr3kOGJu50Fok"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzUzNjYsImV4cCI6MTc4ODE3ODk2Nn0.v00aRN61YwFX61GggV15sScvse4yyKcmzWOHdRbvEms","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzUzNjYsImV4cCI6MTc4ODc4MDE2Nn0.tQeqaYROe3gIDHrhU6MgVMs72iJgx_kK9mHW173rwjw","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+
+13:22:46.642 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://api.efi-academy.com/api/employees
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzUzNjYsImV4cCI6MTc4ODE3ODk2Nn0.v00aRN61YwFX61GggV15sScvse4yyKcmzWOHdRbvEms
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 167
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"tonya.collier@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+13:22:46.706 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 63
+2 < 201
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 11:22:46 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 307
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"133-hDqItpvaUPTAAqcS684X9l7w08A"
+{"message":"Employee created.","data":{"id":770,"firstName":"Alicjhjhe","lastName":"Dupont","email":"tonya.collier@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:22:46.886Z","updatedAt":"2026-08-31T11:22:46.886Z"}}
+
+13:22:46.732 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > PUT https://api.efi-academy.com/api/employees/770
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzUzNjYsImV4cCI6MTc4ODE3ODk2Nn0.v00aRN61YwFX61GggV15sScvse4yyKcmzWOHdRbvEms
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:22:46.790 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 58
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 11:22:46 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 301
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"12d-zugQEm5jzvCtroT8RiQ/rxfF24s"
+{"message":"Employee updated.","data":{"id":770,"firstName":"Lam","lastName":"Dupont","email":"tonya.collier@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:22:46.886Z","updatedAt":"2026-08-31T11:22:46.972Z"}}
+
+13:22:46.795 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > DELETE https://api.efi-academy.com/public/employees/770
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzUzNjYsImV4cCI6MTc4ODE3ODk2Nn0.v00aRN61YwFX61GggV15sScvse4yyKcmzWOHdRbvEms
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 19
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:22:46.845 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 50
+4 < 200
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 11:22:47 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 35
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"23-icuosdYN4x/PBxX68qAjsD+cEnU"
+{"message":"Employee 770 deleted."}
+
+13:22:46.851 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > PUT https://api.efi-academy.com/public/employees/2
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 184
+5 > Host: api.efi-academy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+5 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+13:22:46.902 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 50
+5 < 404
+5 < Server: nginx
+5 < Date: Mon, 31 Aug 2026 11:22:47 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Content-Length: 54
+5 < Connection: keep-alive
+5 < X-Powered-By: Express
+5 < Access-Control-Allow-Origin: *
+5 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+13:22:46.903 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:148
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 50, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:148
+13:22:47.727 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+13:24:27.444 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee2
+13:24:28.273 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:24:28.276 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788175468275
+13:24:28.284 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+13:24:29.250 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:29.925 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"admin123"}
+
+13:24:30.534 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 604
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 11:24:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 561
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"231-cT+q+XIoaIh7lgCNzEW+PrHXVeM"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU0NzAsImV4cCI6MTc4ODE3OTA3MH0.-ojIGid_li53EiSJSyb18ZEI-Tw4Qs0s3mH_pdTFcrE","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU0NzAsImV4cCI6MTc4ODc4MDI3MH0.EleBtIOTyn934m2UUlLzDx-nsjmF_hGOzjMEC-92Jvc","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+
+13:24:30.571 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://api.efi-academy.com/api/employees
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU0NzAsImV4cCI6MTc4ODE3OTA3MH0.-ojIGid_li53EiSJSyb18ZEI-Tw4Qs0s3mH_pdTFcrE
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 167
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"waldo.thiel@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+13:24:30.648 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 76
+2 < 201
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 11:24:30 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 307
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"133-KY+JE/kIA8xAip+WUwBAEWL7VCQ"
+{"message":"Employee created.","data":{"id":771,"firstName":"Alicjhjhe","lastName":"Dupont","email":"waldo.thiel@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:24:30.819Z","updatedAt":"2026-08-31T11:24:30.819Z"}}
+
+13:24:30.670 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > PUT https://api.efi-academy.com/api/employees/771
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU0NzAsImV4cCI6MTc4ODE3OTA3MH0.-ojIGid_li53EiSJSyb18ZEI-Tw4Qs0s3mH_pdTFcrE
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:24:30.738 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 67
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 11:24:30 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 301
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"12d-0Hsihi/RVPyXpiviunJVAS6ZsTY"
+{"message":"Employee updated.","data":{"id":771,"firstName":"Lam","lastName":"Dupont","email":"waldo.thiel@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:24:30.819Z","updatedAt":"2026-08-31T11:24:30.921Z"}}
+
+13:24:30.745 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > DELETE https://api.efi-academy.com/public/employees/771
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU0NzAsImV4cCI6MTc4ODE3OTA3MH0.-ojIGid_li53EiSJSyb18ZEI-Tw4Qs0s3mH_pdTFcrE
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 19
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:24:30.797 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 50
+4 < 200
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 11:24:30 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 35
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"23-xABMRPCRO40yGWBrz7Wa7XZfWNk"
+{"message":"Employee 771 deleted."}
+
+13:24:30.807 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > PUT https://api.efi-academy.com/public/employees/2
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 184
+5 > Host: api.efi-academy.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+5 > Accept-Encoding: gzip,deflate
+{"firstName":"Lamia","lastName":"Lam","email":"alice.duponttttbfhrghttgggggggttttt@example.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+13:24:30.864 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 47
+5 < 404
+5 < Server: nginx
+5 < Date: Mon, 31 Aug 2026 11:24:31 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Content-Length: 54
+5 < Connection: keep-alive
+5 < X-Powered-By: Express
+5 < Access-Control-Allow-Origin: *
+5 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
+{"message":"Employee with id 2 not found.","code":404}
+
+13:24:30.868 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:148
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 47, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:148
+13:24:31.789 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+13:30:06.947 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @createEmployee2
+13:30:07.750 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:30:07.754 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788175807752
+13:30:07.760 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+13:30:08.714 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:30:09.422 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"admin123"}
+
+13:30:09.966 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 537
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 11:30:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 561
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"231-qi+VAjfS6whQiM1BvgQJf2pmI3g"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU4MTAsImV4cCI6MTc4ODE3OTQxMH0.BU5RlLHjBSWKvhPfYNfOVjs_hs8ts5ZqAZTGisoJCPQ","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU4MTAsImV4cCI6MTc4ODc4MDYxMH0.JZFedSxUWIXlA6lxZ0czfen6jeQuw27PX7Up-06JJ5I","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+
+13:30:09.978 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://api.efi-academy.com/api/employees
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU4MTAsImV4cCI6MTc4ODE3OTQxMH0.BU5RlLHjBSWKvhPfYNfOVjs_hs8ts5ZqAZTGisoJCPQ
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 168
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"kim.konopelski@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+13:30:10.042 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 64
+2 < 201
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 11:30:10 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 308
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"134-iFB9Duiz1825aTppeq7zZIosDrg"
+{"message":"Employee created.","data":{"id":772,"firstName":"Alicjhjhe","lastName":"Dupont","email":"kim.konopelski@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:30:10.227Z","updatedAt":"2026-08-31T11:30:10.227Z"}}
+
+13:30:10.067 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > PUT https://api.efi-academy.com/api/employees/772
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU4MTAsImV4cCI6MTc4ODE3OTQxMH0.BU5RlLHjBSWKvhPfYNfOVjs_hs8ts5ZqAZTGisoJCPQ
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:30:10.124 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 57
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 11:30:10 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 302
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"12e-4SUh2wxb8V7I0nlr9w58bVO1wuQ"
+{"message":"Employee updated.","data":{"id":772,"firstName":"Lam","lastName":"Dupont","email":"kim.konopelski@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T11:30:10.227Z","updatedAt":"2026-08-31T11:30:10.311Z"}}
+
+13:30:10.129 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > DELETE https://api.efi-academy.com/public/employees/772
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxNzU4MTAsImV4cCI6MTc4ODE3OTQxMH0.BU5RlLHjBSWKvhPfYNfOVjs_hs8ts5ZqAZTGisoJCPQ
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 19
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+13:30:10.187 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 56
+4 < 200
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 11:30:10 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 35
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"23-zShjOfjrcIM+uD9RuPNsadqiwjA"
+{"message":"Employee 772 deleted."}
+
+13:30:11.126 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/employees/employees.feature
+14:39:48.964 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @share-event
+14:39:50.005 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: examples/community/community.feature - mismatched input 'r' expecting <EOF>
+14:41:18.875 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @share-event
+14:41:19.824 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:41:19.827 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788180079824
+14:41:19.835 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:41:20.988 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:41:21.642 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://preprod.thrundrz.fr/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:41:21.788 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST http://preprod.thrundrz.fr/auth/login
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:41:21.990 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 200
+2 < 200
+2 < Date: Mon, 31 Aug 2026 12:41:22 GMT
+2 < Content-Type: text/html
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < Last-Modified: Wed, 19 Aug 2026 12:30:49 GMT
+2 < Etag: "a1c-6a85a1f9-cac9c20ea60c51e1;gz"
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: b7a5a77d77185ba19399928518b31350-int-edge4
+2 < x-hcdn-cache-status: DYNAMIC
+2 < x-hcdn-upstream-rt: 0.002
+<!doctype html><html lang="fr"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#ffffff"/><title>Thrundrz — Événements à Dijon, concerts, sport, sorties</title><meta name="description" content="Thrundrz regroupe tous les événements près de chez vous : concerts, sport, sorties famille, soirées à Dijon. Trouvez votre plan soirée et rejoignez des groupes de sortie."/><meta name="keywords" content="événements Dijon, plan soirée Dijon, sortie Dijon, groupe sortie Dijon, événement culturel Dijon, Thrundrz, soirée, concert Dijon, sport Dijon"/><meta name="robots" content="index, follow"/><meta name="author" content="Thrundrz"/><link rel="canonical" href="https://thrundrz.fr/"/><meta property="og:type" content="website"/><meta property="og:title" content="Thrundrz — Tous les événements près de chez vous"/><meta property="og:description" content="Concerts, sport, expos, sorties famille… Thrundrz rassemble tous les événements à Dijon et en France."/><meta property="og:url" content="https://thrundrz.fr/"/><meta property="og:image" content="https://thrundrz.fr/logo.png"/><meta property="og:locale" content="fr_FR"/><meta property="og:site_name" content="Thrundrz"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Thrundrz — Événements près de chez vous"/><meta name="twitter:description" content="Tous les événements culturels, sportifs et familiaux en une seule app."/><meta name="twitter:image" content="https://thrundrz.fr/logo.png"/><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Thrundrz",
+    "url": "https://thrundrz.fr",
+    "description": "Application mobile regroupant tous les événements culturels, sportifs et familiaux près de chez vous.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "areaServed": [
+      { "@type": "City", "name": "Dijon" },
+      { "@type": "Country", "name": "France" }
+    ]
+  }</script><link rel="icon" href="/logo.png"/><link rel="apple-touch-icon" href="/logo.png"/><script defer="defer" src="/static/js/main.1381e21e.js"></script><link href="/static/css/main.0ec90a30.css" rel="stylesheet"></head><body><noscript>Thrundrz — Découvrez tous les événements près de chez vous : concerts, sport, sorties famille et soirées à Dijon.</noscript><div id="root"></div></body></html>
+
+14:41:22.014 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > POST http://preprod.thrundrz.fr/v1/posts/share-event
+3 > Authorization: Bearer null
+3 > Host: preprod.thrundrz.fr
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+14:41:22.092 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > POST http://preprod.thrundrz.fr/v1/posts/share-event
+4 > Authorization: Bearer null
+4 > Host: preprod.thrundrz.fr
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+14:41:22.165 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 73
+4 < 200
+4 < Date: Mon, 31 Aug 2026 12:41:22 GMT
+4 < Content-Type: text/html
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Vary: Accept-Encoding
+4 < Last-Modified: Wed, 19 Aug 2026 12:30:49 GMT
+4 < Etag: "a1c-6a85a1f9-cac9c20ea60c51e1;gz"
+4 < platform: hostinger
+4 < panel: hpanel
+4 < Content-Security-Policy: upgrade-insecure-requests
+4 < Server: hcdn
+4 < alt-svc: h3=":443"; ma=86400
+4 < x-hcdn-request-id: 6f857713fb55800afe21698a56e1f4bd-int-edge3
+4 < x-hcdn-cache-status: DYNAMIC
+4 < x-hcdn-upstream-rt: 0.003
+<!doctype html><html lang="fr"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#ffffff"/><title>Thrundrz — Événements à Dijon, concerts, sport, sorties</title><meta name="description" content="Thrundrz regroupe tous les événements près de chez vous : concerts, sport, sorties famille, soirées à Dijon. Trouvez votre plan soirée et rejoignez des groupes de sortie."/><meta name="keywords" content="événements Dijon, plan soirée Dijon, sortie Dijon, groupe sortie Dijon, événement culturel Dijon, Thrundrz, soirée, concert Dijon, sport Dijon"/><meta name="robots" content="index, follow"/><meta name="author" content="Thrundrz"/><link rel="canonical" href="https://thrundrz.fr/"/><meta property="og:type" content="website"/><meta property="og:title" content="Thrundrz — Tous les événements près de chez vous"/><meta property="og:description" content="Concerts, sport, expos, sorties famille… Thrundrz rassemble tous les événements à Dijon et en France."/><meta property="og:url" content="https://thrundrz.fr/"/><meta property="og:image" content="https://thrundrz.fr/logo.png"/><meta property="og:locale" content="fr_FR"/><meta property="og:site_name" content="Thrundrz"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Thrundrz — Événements près de chez vous"/><meta name="twitter:description" content="Tous les événements culturels, sportifs et familiaux en une seule app."/><meta name="twitter:image" content="https://thrundrz.fr/logo.png"/><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Thrundrz",
+    "url": "https://thrundrz.fr",
+    "description": "Application mobile regroupant tous les événements culturels, sportifs et familiaux près de chez vous.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "areaServed": [
+      { "@type": "City", "name": "Dijon" },
+      { "@type": "Country", "name": "France" }
+    ]
+  }</script><link rel="icon" href="/logo.png"/><link rel="apple-touch-icon" href="/logo.png"/><script defer="defer" src="/static/js/main.1381e21e.js"></script><link href="/static/css/main.0ec90a30.css" rel="stylesheet"></head><body><noscript>Thrundrz — Découvrez tous les événements près de chez vous : concerts, sport, sorties famille et soirées à Dijon.</noscript><div id="root"></div></body></html>
+
+14:41:22.169 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:37
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 73, url: http://preprod.thrundrz.fr/v1/posts/share-event, response: 
+<!doctype html><html lang="fr"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#ffffff"/><title>Thrundrz — Événements à Dijon, concerts, sport, sorties</title><meta name="description" content="Thrundrz regroupe tous les événements près de chez vous : concerts, sport, sorties famille, soirées à Dijon. Trouvez votre plan soirée et rejoignez des groupes de sortie."/><meta name="keywords" content="événements Dijon, plan soirée Dijon, sortie Dijon, groupe sortie Dijon, événement culturel Dijon, Thrundrz, soirée, concert Dijon, sport Dijon"/><meta name="robots" content="index, follow"/><meta name="author" content="Thrundrz"/><link rel="canonical" href="https://thrundrz.fr/"/><meta property="og:type" content="website"/><meta property="og:title" content="Thrundrz — Tous les événements près de chez vous"/><meta property="og:description" content="Concerts, sport, expos, sorties famille… Thrundrz rassemble tous les événements à Dijon et en France."/><meta property="og:url" content="https://thrundrz.fr/"/><meta property="og:image" content="https://thrundrz.fr/logo.png"/><meta property="og:locale" content="fr_FR"/><meta property="og:site_name" content="Thrundrz"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Thrundrz — Événements près de chez vous"/><meta name="twitter:description" content="Tous les événements culturels, sportifs et familiaux en une seule app."/><meta name="twitter:image" content="https://thrundrz.fr/logo.png"/><script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Thrundrz",
+    "url": "https://thrundrz.fr",
+    "description": "Application mobile regroupant tous les événements culturels, sportifs et familiaux près de chez vous.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "areaServed": [
+      { "@type": "City", "name": "Dijon" },
+      { "@type": "Country", "name": "France" }
+    ]
+  }</script><link rel="icon" href="/logo.png"/><link rel="apple-touch-icon" href="/logo.png"/><script defer="defer" src="/static/js/main.1381e21e.js"></script><link href="/static/css/main.0ec90a30.css" rel="stylesheet"></head><body><noscript>Thrundrz — Découvrez tous les événements près de chez vous : concerts, sport, sorties famille et soirées à Dijon.</noscript><div id="root"></div></body></html>
+classpath:examples/community/community.feature:37
+14:41:23.044 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+14:43:42.539 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @share-event
+14:43:43.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:43:43.348 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788180223343
+14:43:43.356 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:43:44.425 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:43:45.050 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:43:45.353 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 300
+1 < 404
+1 < Date: Mon, 31 Aug 2026 12:43:45 GMT
+1 < Content-Type: text/html; charset=UTF-8
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: a7357fc8ce8ef919cb0dc494befe8cc5-int-edge6
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Not Found</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        404                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Not Found                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+14:43:45.356 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:20
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 300, url: https://preprod.thrundrz.fr/backendpublic/public/api/auth/login, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Not Found</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        404                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Not Found                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+classpath:examples/community/community.feature:20
+14:43:46.229 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+14:49:23.106 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @share-event
+14:49:24.035 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:49:24.039 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788180564039
+14:49:24.046 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:49:25.123 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:49:25.818 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:49:26.407 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 200
+1 < Date: Mon, 31 Aug 2026 12:49:26 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 5
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: f2aa1bcca0d774b454d036e2fd7ece61-int-edge3
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.223
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MDU2NiwiZXhwIjoxNzkwNzcyNTY2LCJuYmYiOjE3ODgxODA1NjYsImp0aSI6IkY5S2RMQVB6NUI4YklCZ0UiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.c3Zdn0CcrlxDoW-E_2aii-h2mG32bIbkO1QCogQBQ-E","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":27,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+14:49:26.441 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer null
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+14:49:26.513 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 71
+2 < 401
+2 < Date: Mon, 31 Aug 2026 12:49:26 GMT
+2 < Content-Type: text/html; charset=UTF-8
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: PHP/8.3.31
+2 < www-authenticate: jwt-auth
+2 < Cache-Control: no-cache, private
+2 < X-RateLimit-Limit: 20
+2 < X-RateLimit-Remaining: 19
+2 < Access-Control-Allow-Origin: *
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: ae016ad56adf479e20e585e4d84f59d9-int-edge4
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+14:49:26.514 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:37
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 71, url: https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+classpath:examples/community/community.feature:37
+14:49:27.340 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+14:56:25.229 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @communtiy
+14:56:26.004 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:56:26.004 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788180986004
+14:56:26.011 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:56:42.579 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @community
+14:56:43.369 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:56:43.375 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788181003374
+14:56:43.381 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:56:44.359 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:56:44.997 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:56:45.677 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 664
+1 < 200
+1 < Date: Mon, 31 Aug 2026 12:56:45 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 3
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: cd4b5685c15bf26e10af06536d0c3376-int-edge3
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.223
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTAwNSwiZXhwIjoxNzkwNzczMDA1LCJuYmYiOjE3ODgxODEwMDUsImp0aSI6IkRzaTZ2Wmtvb25YQzZ1VDYiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.8Ts8xM1aYTF70A_g58Kl1qYgqNIKKfxkOEy9CkNt6t0","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":27,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+14:56:45.714 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer null
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+14:56:45.847 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 133
+2 < 401
+2 < Date: Mon, 31 Aug 2026 12:56:46 GMT
+2 < Content-Type: text/html; charset=UTF-8
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: PHP/8.3.31
+2 < www-authenticate: jwt-auth
+2 < Cache-Control: no-cache, private
+2 < X-RateLimit-Limit: 20
+2 < X-RateLimit-Remaining: 19
+2 < Access-Control-Allow-Origin: *
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: 378e9375a95ce0367bac33ee4c5f2d4c-int-edge4
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+14:56:45.847 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:37
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 133, url: https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+classpath:examples/community/community.feature:37
+14:56:46.824 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+14:58:34.016 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @community
+14:58:34.832 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:58:34.835 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788181114832
+14:58:34.844 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:58:35.964 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:58:36.579 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:58:37.197 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 615
+1 < 200
+1 < Date: Mon, 31 Aug 2026 12:58:37 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 3
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: 83466a6fa4a054da47abb5929830dd5d-int-edge5
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.243
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTExNywiZXhwIjoxNzkwNzczMTE3LCJuYmYiOjE3ODgxODExMTcsImp0aSI6InNwZjF0ZElIaTh1a21EQ04iLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3l4hXIsxpaSeqwb6rRiDLMPI8CxjHOJPd7JCF6YBT6I","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":27,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+14:58:37.245 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer null
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+14:58:37.300 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 55
+2 < 401
+2 < Date: Mon, 31 Aug 2026 12:58:37 GMT
+2 < Content-Type: text/html; charset=UTF-8
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: PHP/8.3.31
+2 < www-authenticate: jwt-auth
+2 < Cache-Control: no-cache, private
+2 < X-RateLimit-Limit: 20
+2 < X-RateLimit-Remaining: 19
+2 < Access-Control-Allow-Origin: *
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: c147c2487b750fa155014944aa9d8316-int-edge3
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+14:58:37.302 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:37
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 55, url: https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unauthorized</title>
+
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
+        </style>
+
+        <style>
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+            <div class="max-w-xl mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
+                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+                        401                    </div>
+
+                    <div class="ml-4 text-lg text-gray-500 uppercase tracking-wider">
+                        Unauthorized                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+classpath:examples/community/community.feature:37
+14:58:38.187 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+14:59:49.558 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @community
+14:59:50.771 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:59:50.771 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788181190771
+14:59:50.791 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+14:59:51.871 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:59:52.517 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+14:59:53.019 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 496
+1 < 200
+1 < Date: Mon, 31 Aug 2026 12:59:53 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 3
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: 53b0252f340792a847bb5c892f7ff31b-int-edge3
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.225
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTE5MywiZXhwIjoxNzkwNzczMTkzLCJuYmYiOjE3ODgxODExOTMsImp0aSI6IktCSnBuR2tTaU9mTFh1dWQiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Qb45ZWoU-vX-ECShmNf-9_CZ4LidmOBqTwshC2nkcag","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":27,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+14:59:53.036 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTE5MywiZXhwIjoxNzkwNzczMTkzLCJuYmYiOjE3ODgxODExOTMsImp0aSI6IktCSnBuR2tTaU9mTFh1dWQiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Qb45ZWoU-vX-ECShmNf-9_CZ4LidmOBqTwshC2nkcag
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+14:59:53.093 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+3 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTE5MywiZXhwIjoxNzkwNzczMTkzLCJuYmYiOjE3ODgxODExOTMsImp0aSI6IktCSnBuR2tTaU9mTFh1dWQiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Qb45ZWoU-vX-ECShmNf-9_CZ4LidmOBqTwshC2nkcag
+3 > Host: preprod.thrundrz.fr
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+14:59:53.113 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+4 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTE5MywiZXhwIjoxNzkwNzczMTkzLCJuYmYiOjE3ODgxODExOTMsImp0aSI6IktCSnBuR2tTaU9mTFh1dWQiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Qb45ZWoU-vX-ECShmNf-9_CZ4LidmOBqTwshC2nkcag
+4 > Host: preprod.thrundrz.fr
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+14:59:53.134 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 21
+4 < 405
+4 < Date: Mon, 31 Aug 2026 12:59:53 GMT
+4 < Content-Type: text/html; charset=UTF-8
+4 < Connection: keep-alive
+4 < Vary: Accept-Encoding
+4 < X-Powered-By: PHP/8.3.31
+4 < allow: HEAD
+4 < Cache-Control: no-cache, private
+4 < platform: hostinger
+4 < panel: hpanel
+4 < Content-Security-Policy: upgrade-insecure-requests
+4 < Server: hcdn
+4 < alt-svc: h3=":443"; ma=86400
+4 < x-hcdn-request-id: e168f24a3bf3e1d05eaa57f7972f941e-int-edge3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <title>An Error Occurred: Method Not Allowed</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>❌</text></svg>" />
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+</head>
+<body>
+<div class="container">
+    <h1>Oops! An Error Occurred</h1>
+    <h2>The server returned a "405 Method Not Allowed".</h2>
+
+    <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+</div>
+</body>
+</html>
+
+14:59:53.134 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:37
+Then status 201
+status code was: 405, expected: 201, response time in milliseconds: 21, url: https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <title>An Error Occurred: Method Not Allowed</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>❌</text></svg>" />
+    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+.container { margin: 30px; max-width: 600px; }
+h1 { color: #dc3545; font-size: 24px; }
+h2 { font-size: 18px; }</style>
+</head>
+<body>
+<div class="container">
+    <h1>Oops! An Error Occurred</h1>
+    <h2>The server returned a "405 Method Not Allowed".</h2>
+
+    <p>
+        Something is broken. Please let us know what you were doing when this error occurred.
+        We will fix it as soon as possible. Sorry for any inconvenience caused.
+    </p>
+</div>
+</body>
+</html>
+classpath:examples/community/community.feature:37
+14:59:54.045 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+15:03:19.864 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @community
+15:03:20.748 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:03:20.750 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788181400750
+15:03:20.757 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+15:03:22.123 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:03:22.875 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+15:03:23.442 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 551
+1 < 200
+1 < Date: Mon, 31 Aug 2026 13:03:23 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 5
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: 4aa335eaed17af4fe03edd30997f210e-int-edge6
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.226
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTQwMywiZXhwIjoxNzkwNzczNDAzLCJuYmYiOjE3ODgxODE0MDMsImp0aSI6IlNud1J2SFg2TWRpR1JoaWsiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KUlOOiYjLNKG0Bi9Ocyhw1Z_FmT-Qu11dPjNqbIDcRU","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":27,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+15:03:23.468 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTQwMywiZXhwIjoxNzkwNzczNDAzLCJuYmYiOjE3ODgxODE0MDMsImp0aSI6IlNud1J2SFg2TWRpR1JoaWsiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KUlOOiYjLNKG0Bi9Ocyhw1Z_FmT-Qu11dPjNqbIDcRU
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 102
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"even_id":42,"titre":"Je participe à ce concert 🎉 Qui vient ?","contenu":"Je serai là dès 20h"}
+
+15:03:23.533 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 63
+2 < 201
+2 < Date: Mon, 31 Aug 2026 13:03:23 GMT
+2 < Content-Type: application/json
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: PHP/8.3.31
+2 < Cache-Control: no-cache, private
+2 < X-RateLimit-Limit: 20
+2 < X-RateLimit-Remaining: 19
+2 < Access-Control-Allow-Origin: *
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: 1127f62347dd95dbc31065484dba60fe-int-edge5
+2 < x-hcdn-cache-status: DYNAMIC
+2 < x-hcdn-upstream-rt: 0.021
+{"success":true,"message":"\u00c9v\u00e9nement partag\u00e9","data":{"id":278,"titre":"Je participe \u00e0 ce concert \ud83c\udf89 Qui vient ?","contenu":"Je serai l\u00e0 d\u00e8s 20h","images":"https:\/\/thrundrz.fr\/thrundrz_api\/assets\/image\/chill4.JPG","lien_youtube":null,"lien_facebook":null,"lien_tiktok":null,"lien_instagram":null,"even_id":42,"created_at":"2026-08-31T13:03:23.000000Z","nbr_likes":0,"nbr_comments":0,"is_liked":false,"is_favory":false,"is_mine":true,"auteur":{"id":1251,"nomComplet":"Jean Dupont","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","is_followed":false,"is_abonne":false}}}
+
+15:03:23.555 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/278/comments
+3 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTQwMywiZXhwIjoxNzkwNzczNDAzLCJuYmYiOjE3ODgxODE0MDMsImp0aSI6IlNud1J2SFg2TWRpR1JoaWsiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KUlOOiYjLNKG0Bi9Ocyhw1Z_FmT-Qu11dPjNqbIDcRU
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 54
+3 > Host: preprod.thrundrz.fr
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"contenu":"Super, je viens aussi !","parent_id":null}
+
+15:03:23.595 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 40
+3 < 201
+3 < Date: Mon, 31 Aug 2026 13:03:23 GMT
+3 < Content-Type: application/json
+3 < Connection: keep-alive
+3 < Vary: Accept-Encoding
+3 < X-Powered-By: PHP/8.3.31
+3 < Cache-Control: no-cache, private
+3 < X-RateLimit-Limit: 20
+3 < X-RateLimit-Remaining: 18
+3 < Access-Control-Allow-Origin: *
+3 < platform: hostinger
+3 < panel: hpanel
+3 < Content-Security-Policy: upgrade-insecure-requests
+3 < Server: hcdn
+3 < alt-svc: h3=":443"; ma=86400
+3 < x-hcdn-request-id: 7b05a6819ebc16e67267ebf3ca792aa0-int-edge6
+3 < x-hcdn-cache-status: DYNAMIC
+3 < x-hcdn-upstream-rt: 0.016
+{"success":true,"nbr_comments":1,"parent_id":null,"data":{"id":188,"parent_id":null,"contenu":"Super, je viens aussi !","created_at":"2026-08-31T13:03:23.000000Z","is_mine":true,"auteur":{"id":1251,"nomComplet":"Jean Dupont","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","is_abonne":false}}}
+
+15:03:23.610 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/278/like
+4 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTQwMywiZXhwIjoxNzkwNzczNDAzLCJuYmYiOjE3ODgxODE0MDMsImp0aSI6IlNud1J2SFg2TWRpR1JoaWsiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KUlOOiYjLNKG0Bi9Ocyhw1Z_FmT-Qu11dPjNqbIDcRU
+4 > Host: preprod.thrundrz.fr
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+15:03:23.645 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 35
+4 < 200
+4 < Date: Mon, 31 Aug 2026 13:03:23 GMT
+4 < Content-Type: application/json
+4 < Connection: keep-alive
+4 < Vary: Accept-Encoding
+4 < X-Powered-By: PHP/8.3.31
+4 < Cache-Control: no-cache, private
+4 < X-RateLimit-Limit: 20
+4 < X-RateLimit-Remaining: 17
+4 < Access-Control-Allow-Origin: *
+4 < platform: hostinger
+4 < panel: hpanel
+4 < Content-Security-Policy: upgrade-insecure-requests
+4 < Server: hcdn
+4 < alt-svc: h3=":443"; ma=86400
+4 < x-hcdn-request-id: 582814505d86e893c24cb9ac8c9a97a1-int-edge5
+4 < x-hcdn-cache-status: DYNAMIC
+4 < x-hcdn-upstream-rt: 0.011
+4 < Accept-Ranges: bytes
+{"success":true,"is_liked":true,"nbr_likes":1}
+
+15:03:23.661 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/278
+5 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTQwMywiZXhwIjoxNzkwNzczNDAzLCJuYmYiOjE3ODgxODE0MDMsImp0aSI6IlNud1J2SFg2TWRpR1JoaWsiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.KUlOOiYjLNKG0Bi9Ocyhw1Z_FmT-Qu11dPjNqbIDcRU
+5 > Host: preprod.thrundrz.fr
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+5 > Accept-Encoding: gzip,deflate
+
+
+15:03:23.720 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 57
+5 < 200
+5 < Date: Mon, 31 Aug 2026 13:03:23 GMT
+5 < Content-Type: application/json
+5 < Connection: keep-alive
+5 < Vary: Accept-Encoding
+5 < X-Powered-By: PHP/8.3.31
+5 < Cache-Control: no-cache, private
+5 < X-RateLimit-Limit: 20
+5 < X-RateLimit-Remaining: 16
+5 < Access-Control-Allow-Origin: *
+5 < platform: hostinger
+5 < panel: hpanel
+5 < Content-Security-Policy: upgrade-insecure-requests
+5 < Server: hcdn
+5 < alt-svc: h3=":443"; ma=86400
+5 < x-hcdn-request-id: 98889740c611b5a87c985a04aefa205a-int-edge6
+5 < x-hcdn-cache-status: DYNAMIC
+5 < x-hcdn-upstream-rt: 0.010
+5 < Accept-Ranges: bytes
+{"success":true,"message":"Publication supprim\u00e9e"}
+
+15:03:24.639 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+15:05:45.007 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @community
+15:05:45.997 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:05:46.003 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1788181546003
+15:05:46.008 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+15:05:47.362 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+15:05:48.047 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 82
+1 > Host: preprod.thrundrz.fr
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"email":"jeanlamia@example.com","password":"motdepasse123","fcm_token":"fcm_xxx"}
+
+15:05:48.805 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 758
+1 < 200
+1 < Date: Mon, 31 Aug 2026 13:05:49 GMT
+1 < Content-Type: application/json
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: PHP/8.3.31
+1 < Cache-Control: no-cache, private
+1 < X-RateLimit-Limit: 3
+1 < X-RateLimit-Remaining: 2
+1 < Access-Control-Allow-Origin: *
+1 < platform: hostinger
+1 < panel: hpanel
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Server: hcdn
+1 < alt-svc: h3=":443"; ma=86400
+1 < x-hcdn-request-id: 16f93db841e3f2661d14fc30993f1b1b-int-edge6
+1 < x-hcdn-cache-status: DYNAMIC
+1 < x-hcdn-upstream-rt: 0.224
+1 < Accept-Ranges: bytes
+{"success":true,"message":"Connexion r\u00e9ussie","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE","user":{"id":1251,"nomComplet":"Jean Dupont","email":"jeanlamia@example.com","role":"client","stripe_customer_id":null,"connexion_methode":"manuelle","parent_id":null,"siret":null,"raison_sociale":null,"code_postal_siege":null,"rue_siege":null,"ville_siege":null,"dirigeant_siege":null,"telephone":" ","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","bio":null,"xp":54,"niveau":1,"description":null,"photo_background":"https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=","instagram_url":null,"facebook_url":null,"linkedin_url":null,"youtube_url":null,"fcm_token":"fcm_xxx","note1":0,"note2":0,"note3":0,"note4":0,"note5":0,"created_at":"2026-08-31T12:11:13.000000Z","total_events":0,"total_views":0,"total_likes":0,"total_reserved":0,"total_clicks":0}}
+
+15:05:48.826 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
+2 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 102
+2 > Host: preprod.thrundrz.fr
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"even_id":42,"titre":"Je participe à ce concert 🎉 Qui vient ?","contenu":"Je serai là dès 20h"}
+
+15:05:48.900 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 73
+2 < 201
+2 < Date: Mon, 31 Aug 2026 13:05:49 GMT
+2 < Content-Type: application/json
+2 < Connection: keep-alive
+2 < Vary: Accept-Encoding
+2 < X-Powered-By: PHP/8.3.31
+2 < Cache-Control: no-cache, private
+2 < X-RateLimit-Limit: 20
+2 < X-RateLimit-Remaining: 19
+2 < Access-Control-Allow-Origin: *
+2 < platform: hostinger
+2 < panel: hpanel
+2 < Content-Security-Policy: upgrade-insecure-requests
+2 < Server: hcdn
+2 < alt-svc: h3=":443"; ma=86400
+2 < x-hcdn-request-id: 2126c54d89707029451f638492b17fcf-int-edge3
+2 < x-hcdn-cache-status: DYNAMIC
+2 < x-hcdn-upstream-rt: 0.021
+{"success":true,"message":"\u00c9v\u00e9nement partag\u00e9","data":{"id":281,"titre":"Je participe \u00e0 ce concert \ud83c\udf89 Qui vient ?","contenu":"Je serai l\u00e0 d\u00e8s 20h","images":"https:\/\/thrundrz.fr\/thrundrz_api\/assets\/image\/chill4.JPG","lien_youtube":null,"lien_facebook":null,"lien_tiktok":null,"lien_instagram":null,"even_id":42,"created_at":"2026-08-31T13:05:49.000000Z","nbr_likes":0,"nbr_comments":0,"is_liked":false,"is_favory":false,"is_mine":true,"auteur":{"id":1251,"nomComplet":"Jean Dupont","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","is_followed":false,"is_abonne":false}}}
+
+15:05:48.926 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281/comments
+3 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 54
+3 > Host: preprod.thrundrz.fr
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"contenu":"Super, je viens aussi !","parent_id":null}
+
+15:05:48.998 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 72
+3 < 201
+3 < Date: Mon, 31 Aug 2026 13:05:49 GMT
+3 < Content-Type: application/json
+3 < Connection: keep-alive
+3 < Vary: Accept-Encoding
+3 < X-Powered-By: PHP/8.3.31
+3 < Cache-Control: no-cache, private
+3 < X-RateLimit-Limit: 20
+3 < X-RateLimit-Remaining: 18
+3 < Access-Control-Allow-Origin: *
+3 < platform: hostinger
+3 < panel: hpanel
+3 < Content-Security-Policy: upgrade-insecure-requests
+3 < Server: hcdn
+3 < alt-svc: h3=":443"; ma=86400
+3 < x-hcdn-request-id: 1d9eed1209b3d883db93d2fbe4a8af13-int-edge5
+3 < x-hcdn-cache-status: DYNAMIC
+3 < x-hcdn-upstream-rt: 0.018
+{"success":true,"nbr_comments":1,"parent_id":null,"data":{"id":189,"parent_id":null,"contenu":"Super, je viens aussi !","created_at":"2026-08-31T13:05:49.000000Z","is_mine":true,"auteur":{"id":1251,"nomComplet":"Jean Dupont","photo_profil":"https:\/\/thrundrz.fr\/backendpublic\/profil.png","is_abonne":false}}}
+
+15:05:49.006 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281/like
+4 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
+4 > Host: preprod.thrundrz.fr
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+15:05:49.084 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 77
+4 < 200
+4 < Date: Mon, 31 Aug 2026 13:05:49 GMT
+4 < Content-Type: application/json
+4 < Connection: keep-alive
+4 < Vary: Accept-Encoding
+4 < X-Powered-By: PHP/8.3.31
+4 < Cache-Control: no-cache, private
+4 < X-RateLimit-Limit: 20
+4 < X-RateLimit-Remaining: 17
+4 < Access-Control-Allow-Origin: *
+4 < platform: hostinger
+4 < panel: hpanel
+4 < Content-Security-Policy: upgrade-insecure-requests
+4 < Server: hcdn
+4 < alt-svc: h3=":443"; ma=86400
+4 < x-hcdn-request-id: 22e12984ee20107d068cf73b314d03c7-int-edge6
+4 < x-hcdn-cache-status: DYNAMIC
+4 < x-hcdn-upstream-rt: 0.013
+4 < Accept-Ranges: bytes
+{"success":true,"is_liked":true,"nbr_likes":1}
+
+15:05:49.089 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > DELETE https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281
+5 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
+5 > Host: preprod.thrundrz.fr
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+5 > Accept-Encoding: gzip,deflate
+
+
+15:05:49.155 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 64
+5 < 200
+5 < Date: Mon, 31 Aug 2026 13:05:49 GMT
+5 < Content-Type: application/json
+5 < Connection: keep-alive
+5 < Vary: Accept-Encoding
+5 < X-Powered-By: PHP/8.3.31
+5 < Cache-Control: no-cache, private
+5 < X-RateLimit-Limit: 20
+5 < X-RateLimit-Remaining: 16
+5 < Access-Control-Allow-Origin: *
+5 < platform: hostinger
+5 < panel: hpanel
+5 < Content-Security-Policy: upgrade-insecure-requests
+5 < Server: hcdn
+5 < alt-svc: h3=":443"; ma=86400
+5 < x-hcdn-request-id: 6a33c599dad9d453723e2a0055fb5050-int-edge4
+5 < x-hcdn-cache-status: DYNAMIC
+5 < x-hcdn-upstream-rt: 0.010
+5 < Accept-Ranges: bytes
+{"success":true,"message":"Publication supprim\u00e9e"}
+
+15:05:50.181 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature

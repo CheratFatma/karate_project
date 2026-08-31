@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(
+            name: 'TAG',
+            defaultValue: '@community',
+            description: 'Tag Karate à exécuter'
+        )
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Tests Karate') {
+            steps {
+                bat 'mvn test -Dkarate.options="--tags ${TAG}"'
+            }
+        }
+    }
+}
