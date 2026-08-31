@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: examples.ExamplesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.568 s - in examples.ExamplesTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.006 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 5.98 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: faker.book.title()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.github.javafaker.Faker.book failed due to: Message not supported.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/community/community.feature:8
+status code was: 404, expected: 200, response time in milliseconds: 204, url: https://api.efi-academy.com/public/employees/2, response: 
+{"message":"Employee with id 2 not found.","code":404}
+classpath:examples/employees/employees.feature:27 ==> expected: <0> but was: <2>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+

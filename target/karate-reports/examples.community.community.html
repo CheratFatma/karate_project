@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,13 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-31 03:05:49 PM</div>
+    <div>2026-08-31 03:42:12 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[1:25]"><span>[1:25]</span> <span></span></a>
+          <div class="nav-item failed">
+            <a href="#[1:28]"><span>[1:28]</span> <span></span></a>
           </div>
         </div>
       </div>
@@ -70,29 +70,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:25]">
+          <div class="scenario-heading" id="[1:28]">
             <div class="heading-container">
               <div class="scenario-tags">
                 <a class="badge badge-primary" href="karate-tags.html">community</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:25]</span>
+                Scenario: <span>[1:28]</span>
                 <span class="scenario-name"></span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1752</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>148</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:25]bg">
+            <div class="step-container" id="[1:28]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
@@ -105,7 +105,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://preprod.thrundrz.fr/backendpublic/public/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -114,14 +114,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">15:05:47.365 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:42:12.437 karate.env system property was: null 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
@@ -134,7 +134,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def Faker = Java.type(&#39;com.github.javafaker.Faker&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">25</div>
   </div>
 
    
@@ -149,7 +149,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
@@ -162,7 +162,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def faker = new Faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">72</div>
   </div>
 
    
@@ -177,20 +177,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
       
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomEmail = faker.internet().emailAddress()</span>
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def titre = faker.book.title()</span>
       </div>
     </div>
-    <div class="time-cell passed">156</div>
+    <div class="time-cell failed">47</div>
   </div>
 
    
@@ -199,13 +199,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.8">15:42:12.605 classpath:examples/community/community.feature:8
+* def titre = faker.book.title()
+js failed:
+&gt;&gt;&gt;&gt;
+01: faker.book.title()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.github.javafaker.Faker.book failed due to: Message not supported.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:examples/community/community.feature:8
+</div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
@@ -214,11 +224,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.9">
       <div class="step-ref bg-step">9</div>
       
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v1/login/client&#39;</span>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def contenu = faker.lorem.sentence()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -233,25 +243,60 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#1</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;v1/login/client&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref bg-step">10</div>
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def body_login =</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.10">{
+  <div class="preformatted" data-parent="0.13">{
   &quot;email&quot;: &quot;jeanlamia@example.com&quot;,
   &quot;password&quot;: &quot;motdepasse123&quot;,
   &quot;fcm_token&quot;: &quot;fcm_xxx&quot;
@@ -265,20 +310,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref bg-step">18</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref bg-step">21</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>request body_login</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -293,95 +338,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:25]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref bg-step">19</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1146</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19">15:05:48.047 request:
-1 &gt; POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/login/client
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 82
-1 &gt; Host: preprod.thrundrz.fr
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;jeanlamia@example.com&quot;,&quot;password&quot;:&quot;motdepasse123&quot;,&quot;fcm_token&quot;:&quot;fcm_xxx&quot;}
-
-15:05:48.805 response time in milliseconds: 758
-1 &lt; 200
-1 &lt; Date: Mon, 31 Aug 2026 13:05:49 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Connection: keep-alive
-1 &lt; Vary: Accept-Encoding
-1 &lt; X-Powered-By: PHP/8.3.31
-1 &lt; Cache-Control: no-cache, private
-1 &lt; X-RateLimit-Limit: 3
-1 &lt; X-RateLimit-Remaining: 2
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; platform: hostinger
-1 &lt; panel: hpanel
-1 &lt; Content-Security-Policy: upgrade-insecure-requests
-1 &lt; Server: hcdn
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; x-hcdn-request-id: 16f93db841e3f2661d14fc30993f1b1b-int-edge6
-1 &lt; x-hcdn-cache-status: DYNAMIC
-1 &lt; x-hcdn-upstream-rt: 0.224
-1 &lt; Accept-Ranges: bytes
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Connexion r\u00e9ussie&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE&quot;,&quot;user&quot;:{&quot;id&quot;:1251,&quot;nomComplet&quot;:&quot;Jean Dupont&quot;,&quot;email&quot;:&quot;jeanlamia@example.com&quot;,&quot;role&quot;:&quot;client&quot;,&quot;stripe_customer_id&quot;:null,&quot;connexion_methode&quot;:&quot;manuelle&quot;,&quot;parent_id&quot;:null,&quot;siret&quot;:null,&quot;raison_sociale&quot;:null,&quot;code_postal_siege&quot;:null,&quot;rue_siege&quot;:null,&quot;ville_siege&quot;:null,&quot;dirigeant_siege&quot;:null,&quot;telephone&quot;:&quot; &quot;,&quot;photo_profil&quot;:&quot;https:\/\/thrundrz.fr\/backendpublic\/profil.png&quot;,&quot;bio&quot;:null,&quot;xp&quot;:54,&quot;niveau&quot;:1,&quot;description&quot;:null,&quot;photo_background&quot;:&quot;https:\/\/via.placeholder.com\/800x400\/FFFFFF\/FFFFFF?text=&quot;,&quot;instagram_url&quot;:null,&quot;facebook_url&quot;:null,&quot;linkedin_url&quot;:null,&quot;youtube_url&quot;:null,&quot;fcm_token&quot;:&quot;fcm_xxx&quot;,&quot;note1&quot;:0,&quot;note2&quot;:0,&quot;note3&quot;:0,&quot;note4&quot;:0,&quot;note5&quot;:0,&quot;created_at&quot;:&quot;2026-08-31T12:11:13.000000Z&quot;,&quot;total_events&quot;:0,&quot;total_views&quot;:0,&quot;total_likes&quot;:0,&quot;total_reserved&quot;:0,&quot;total_clicks&quot;:0}}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:25]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref bg-step">20</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:25]bg"><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
@@ -390,215 +347,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.22">
       <div class="step-ref bg-step">22</div>
       
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def token = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v1/posts/share-event&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.27">
-      <div class="step-ref passed">27</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body_event =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.27">{
-  &quot;even_id&quot;: 42,
-  &quot;titre&quot;: &quot;Je participe à ce concert 🎉 Qui vient ?&quot;,
-  &quot;contenu&quot;: &quot;Je serai là dès 20h&quot;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request body_event</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.37">15:05:48.827 request:
-2 &gt; POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/share-event
-2 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 102
-2 &gt; Host: preprod.thrundrz.fr
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;even_id&quot;:42,&quot;titre&quot;:&quot;Je participe à ce concert 🎉 Qui vient ?&quot;,&quot;contenu&quot;:&quot;Je serai là dès 20h&quot;}
-
-15:05:48.900 response time in milliseconds: 73
-2 &lt; 201
-2 &lt; Date: Mon, 31 Aug 2026 13:05:49 GMT
-2 &lt; Content-Type: application/json
-2 &lt; Connection: keep-alive
-2 &lt; Vary: Accept-Encoding
-2 &lt; X-Powered-By: PHP/8.3.31
-2 &lt; Cache-Control: no-cache, private
-2 &lt; X-RateLimit-Limit: 20
-2 &lt; X-RateLimit-Remaining: 19
-2 &lt; Access-Control-Allow-Origin: *
-2 &lt; platform: hostinger
-2 &lt; panel: hpanel
-2 &lt; Content-Security-Policy: upgrade-insecure-requests
-2 &lt; Server: hcdn
-2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-2 &lt; x-hcdn-request-id: 2126c54d89707029451f638492b17fcf-int-edge3
-2 &lt; x-hcdn-cache-status: DYNAMIC
-2 &lt; x-hcdn-upstream-rt: 0.021
-{&quot;success&quot;:true,&quot;message&quot;:&quot;\u00c9v\u00e9nement partag\u00e9&quot;,&quot;data&quot;:{&quot;id&quot;:281,&quot;titre&quot;:&quot;Je participe \u00e0 ce concert \ud83c\udf89 Qui vient ?&quot;,&quot;contenu&quot;:&quot;Je serai l\u00e0 d\u00e8s 20h&quot;,&quot;images&quot;:&quot;https:\/\/thrundrz.fr\/thrundrz_api\/assets\/image\/chill4.JPG&quot;,&quot;lien_youtube&quot;:null,&quot;lien_facebook&quot;:null,&quot;lien_tiktok&quot;:null,&quot;lien_instagram&quot;:null,&quot;even_id&quot;:42,&quot;created_at&quot;:&quot;2026-08-31T13:05:49.000000Z&quot;,&quot;nbr_likes&quot;:0,&quot;nbr_comments&quot;:0,&quot;is_liked&quot;:false,&quot;is_favory&quot;:false,&quot;is_mine&quot;:true,&quot;auteur&quot;:{&quot;id&quot;:1251,&quot;nomComplet&quot;:&quot;Jean Dupont&quot;,&quot;photo_profil&quot;:&quot;https:\/\/thrundrz.fr\/backendpublic\/profil.png&quot;,&quot;is_followed&quot;:false,&quot;is_abonne&quot;:false}}}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -613,20 +366,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>match response.data.titre == body_event.titre</span>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -641,48 +394,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1:28]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.40">
-      <div class="step-ref passed">40</div>
+    <div class="step-container" id="0.25">
+      <div class="step-ref bg-step">25</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>match response.data.contenu == body_event.contenu</span>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.41">
-      <div class="step-ref passed">41</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def id = response.data.id</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -710,14 +435,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
       
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id,&#39;comments&#39;</span>
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;v1/posts/share-event&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -738,21 +463,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.46">
-      <div class="step-ref passed">46</div>
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body_comment =</span>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def body_event =</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.46">{
-&quot;contenu&quot;: &quot;Super, je viens aussi !&quot;,
-&quot;parent_id&quot;: null
+  <div class="preformatted" data-parent="0.31">{
+  &quot;even_id&quot;: 42,
+  &quot;titre&quot;: &quot;#(titre)&quot;,
+  &quot;contenu&quot;: &quot;#(contenu)&quot;
 }</div>
 
   
@@ -769,14 +495,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.53">
-      <div class="step-ref passed">53</div>
+    <div class="step-container" id="0.39">
+      <div class="step-ref skipped">39</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request body_comment</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request body_event</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -797,14 +523,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
+    <div class="step-container" id="0.40">
+      <div class="step-ref skipped">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -825,74 +551,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
+    <div class="step-container" id="0.41">
+      <div class="step-ref skipped">41</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.56">15:05:48.926 request:
-3 &gt; POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281/comments
-3 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
-3 &gt; Content-Type: application/json; charset=UTF-8
-3 &gt; Content-Length: 54
-3 &gt; Host: preprod.thrundrz.fr
-3 &gt; Connection: Keep-Alive
-3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-3 &gt; Accept-Encoding: gzip,deflate
-{&quot;contenu&quot;:&quot;Super, je viens aussi !&quot;,&quot;parent_id&quot;:null}
-
-15:05:48.998 response time in milliseconds: 72
-3 &lt; 201
-3 &lt; Date: Mon, 31 Aug 2026 13:05:49 GMT
-3 &lt; Content-Type: application/json
-3 &lt; Connection: keep-alive
-3 &lt; Vary: Accept-Encoding
-3 &lt; X-Powered-By: PHP/8.3.31
-3 &lt; Cache-Control: no-cache, private
-3 &lt; X-RateLimit-Limit: 20
-3 &lt; X-RateLimit-Remaining: 18
-3 &lt; Access-Control-Allow-Origin: *
-3 &lt; platform: hostinger
-3 &lt; panel: hpanel
-3 &lt; Content-Security-Policy: upgrade-insecure-requests
-3 &lt; Server: hcdn
-3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-3 &lt; x-hcdn-request-id: 1d9eed1209b3d883db93d2fbe4a8af13-int-edge5
-3 &lt; x-hcdn-cache-status: DYNAMIC
-3 &lt; x-hcdn-upstream-rt: 0.018
-{&quot;success&quot;:true,&quot;nbr_comments&quot;:1,&quot;parent_id&quot;:null,&quot;data&quot;:{&quot;id&quot;:189,&quot;parent_id&quot;:null,&quot;contenu&quot;:&quot;Super, je viens aussi !&quot;,&quot;created_at&quot;:&quot;2026-08-31T13:05:49.000000Z&quot;,&quot;is_mine&quot;:true,&quot;auteur&quot;:{&quot;id&quot;:1251,&quot;nomComplet&quot;:&quot;Jean Dupont&quot;,&quot;photo_profil&quot;:&quot;https:\/\/thrundrz.fr\/backendpublic\/profil.png&quot;,&quot;is_abonne&quot;:false}}}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -913,14 +579,98 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>match response.success == true</span>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.data.titre == body_event.titre</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.data.contenu == body_event.contenu</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def id = response.data.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -948,14 +698,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+    <div class="step-container" id="0.48">
+      <div class="step-ref skipped">48</div>
       
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id,&#39;like&#39;</span>
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id,&#39;comments&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -976,14 +726,73 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.62">
-      <div class="step-ref passed">62</div>
+    <div class="step-container" id="0.49">
+      <div class="step-ref skipped">49</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def body_comment =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.49">{
+&quot;contenu&quot;: &quot;Super, je viens aussi !&quot;,
+&quot;parent_id&quot;: null
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request body_comment</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1004,73 +813,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.63">
-      <div class="step-ref passed">63</div>
+    <div class="step-container" id="0.59">
+      <div class="step-ref skipped">59</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.63">15:05:49.007 request:
-4 &gt; POST https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281/like
-4 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
-4 &gt; Host: preprod.thrundrz.fr
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-15:05:49.085 response time in milliseconds: 77
-4 &lt; 200
-4 &lt; Date: Mon, 31 Aug 2026 13:05:49 GMT
-4 &lt; Content-Type: application/json
-4 &lt; Connection: keep-alive
-4 &lt; Vary: Accept-Encoding
-4 &lt; X-Powered-By: PHP/8.3.31
-4 &lt; Cache-Control: no-cache, private
-4 &lt; X-RateLimit-Limit: 20
-4 &lt; X-RateLimit-Remaining: 17
-4 &lt; Access-Control-Allow-Origin: *
-4 &lt; platform: hostinger
-4 &lt; panel: hpanel
-4 &lt; Content-Security-Policy: upgrade-insecure-requests
-4 &lt; Server: hcdn
-4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-4 &lt; x-hcdn-request-id: 22e12984ee20107d068cf73b314d03c7-int-edge6
-4 &lt; x-hcdn-cache-status: DYNAMIC
-4 &lt; x-hcdn-upstream-rt: 0.013
-4 &lt; Accept-Ranges: bytes
-{&quot;success&quot;:true,&quot;is_liked&quot;:true,&quot;nbr_likes&quot;:1}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.64">
-      <div class="step-ref passed">64</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1091,14 +841,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.65">
-      <div class="step-ref passed">65</div>
+    <div class="step-container" id="0.60">
+      <div class="step-ref skipped">60</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref skipped">61</div>
+      
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>match response.success == true</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1126,14 +904,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.68">
-      <div class="step-ref passed">68</div>
+    <div class="step-container" id="0.64">
+      <div class="step-ref skipped">64</div>
       
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id</span>
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id,&#39;like&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1154,14 +932,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.69">
-      <div class="step-ref passed">69</div>
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1182,14 +960,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.70">
-      <div class="step-ref passed">70</div>
+    <div class="step-container" id="0.66">
+      <div class="step-ref skipped">66</div>
       
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method delete</span>
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1198,38 +976,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.70">15:05:49.090 request:
-5 &gt; DELETE https://preprod.thrundrz.fr/backendpublic/public/api/v1/posts/281
-5 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ByZXByb2QudGhydW5kcnouZnIvYmFja2VuZHB1YmxpYy9wdWJsaWMvYXBpL3YxL2xvZ2luL2NsaWVudCIsImlhdCI6MTc4ODE4MTU0OSwiZXhwIjoxNzkwNzczNTQ5LCJuYmYiOjE3ODgxODE1NDksImp0aSI6IlN0Y29idlY3M0Q0RGNLNTkiLCJzdWIiOiIxMjUxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.bsFB6iBhHbiWGk8JZ9sdSxdzqRV5Q8MfxBhMIpaN0cE
-5 &gt; Host: preprod.thrundrz.fr
-5 &gt; Connection: Keep-Alive
-5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-5 &gt; Accept-Encoding: gzip,deflate
-
-
-15:05:49.155 response time in milliseconds: 64
-5 &lt; 200
-5 &lt; Date: Mon, 31 Aug 2026 13:05:49 GMT
-5 &lt; Content-Type: application/json
-5 &lt; Connection: keep-alive
-5 &lt; Vary: Accept-Encoding
-5 &lt; X-Powered-By: PHP/8.3.31
-5 &lt; Cache-Control: no-cache, private
-5 &lt; X-RateLimit-Limit: 20
-5 &lt; X-RateLimit-Remaining: 16
-5 &lt; Access-Control-Allow-Origin: *
-5 &lt; platform: hostinger
-5 &lt; panel: hpanel
-5 &lt; Content-Security-Policy: upgrade-insecure-requests
-5 &lt; Server: hcdn
-5 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-5 &lt; x-hcdn-request-id: 6a33c599dad9d453723e2a0055fb5050-int-edge4
-5 &lt; x-hcdn-cache-status: DYNAMIC
-5 &lt; x-hcdn-upstream-rt: 0.010
-5 &lt; Accept-Ranges: bytes
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Publication supprim\u00e9e&quot;}
-
-</div>   
+     
 
   
 
@@ -1241,14 +988,77 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.71">
-      <div class="step-ref passed">71</div>
+    <div class="step-container" id="0.67">
+      <div class="step-ref skipped">67</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.success == true</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#5</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;v1/posts&#39;,id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1270,13 +1080,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.72">
-      <div class="step-ref passed">72</div>
+      <div class="step-ref skipped">72</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>match response.success == true</span>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1298,13 +1108,97 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref passed">73</div>
+      <div class="step-ref skipped">73</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.success == true</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>match response.message == &quot;Publication supprimée&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    

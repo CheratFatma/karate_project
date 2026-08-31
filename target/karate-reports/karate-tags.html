@@ -22,8 +22,8 @@
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-env">
@@ -33,7 +33,7 @@
     <div>Tags</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-31 03:05:50 PM</div>
+    <div>2026-08-31 03:42:15 PM</div>
   </div>
 </div>
 
@@ -46,15 +46,39 @@
           <thead>
             <tr>
               <th class="feature-cell">Feature</th>
-              <th classapend="passed">community</th>
+              <th classapend="failed">community</th>
+              <th classapend="passed">createEmployee1</th>
+              <th classapend="passed">createEmployee2</th>
+              <th classapend="failed">getAllEmployees</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="passed">
+            <tr class="failed">
               <td class="feature-cell">
                 <a href="examples.community.community.html">examples/community/community.feature</a>
               </td>
+              <td classapend="failed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+            </tr>
+            <tr class="failed">
+              <td class="feature-cell">
+                <a href="examples.employees.employees.html">examples/employees/employees.feature</a>
+              </td>
+              <td classapend="passed"></td>
               <td classapend="passed">X</td>
+              <td classapend="passed">X</td>
+              <td classapend="failed">X</td>
+            </tr>
+            <tr class="passed">
+              <td class="feature-cell">
+                <a href="examples.users.users.html">examples/users/users.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
             </tr>
           </tbody>
         </table>
