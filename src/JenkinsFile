@@ -4,7 +4,7 @@ pipeline {
     parameters {
         string(
             name: 'TAG',
-            defaultValue: '@community',
+            defaultValue: '',
             description: 'Tag Karate à exécuter'
         )
     }
@@ -19,7 +19,13 @@ pipeline {
 
         stage('Tests Karate') {
             steps {
-                bat 'mvn test -Dkarate.options="--tags ${TAG}"'
+                script {
+                    if (params.TAG?.trim()) {
+                        bat "mvn test -Dkarate.options=\"--tags ${params.TAG}\""
+                    } else {
+                        bat "mvn test"
+                    }
+                }
             }
         }
     }
