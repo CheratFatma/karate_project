@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.ExamplesTest" time="6.006" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.ExamplesTest" time="6.219" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\HP\Desktop\karate\projet_karate_1\target\test-classes;C:\Users\HP\Desktop\karate\projet_karate_1\target\classes;C:\Users\HP\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\HP\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\HP\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\HP\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\HP\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\HP\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\HP\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\HP\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\HP\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\HP\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\HP\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\HP\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\HP\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\HP\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-karate\2.22.2\allure-karate-2.22.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-java-commons\2.22.2\allure-java-commons-2.22.2.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-model\2.22.2\allure-model-2.22.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-test-filter\2.22.2\allure-test-filter-2.22.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\HP\Desktop\karate\projet_karate_1\target\test-classes;C:\Users\HP\Desktop\karate\projet_karate_1\target\classes;C:\Users\HP\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\HP\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\HP\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\HP\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\HP\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\HP\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\HP\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\HP\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\HP\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\HP\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\HP\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\HP\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\HP\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\HP\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-karate\2.24.0\allure-karate-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire5938167793727788417\surefirebooter15797604591512769121.jar C:\Users\HP\AppData\Local\Temp\surefire5938167793727788417 2026-08-31T15-42-08_458-jvmRun1 surefire15461465931942926966tmp surefire_08235775162513718864tmp"/>
+    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire15313796207991242539\surefirebooter4351121473237756402.jar C:\Users\HP\AppData\Local\Temp\surefire15313796207991242539 2026-08-31T16-26-20_675-jvmRun1 surefire5566711168698254350tmp surefire_010451063519009688491tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\HP\Desktop\karate\projet_karate_1\target\test-classes;C:\Users\HP\Desktop\karate\projet_karate_1\target\classes;C:\Users\HP\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\HP\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\HP\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\HP\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\HP\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\HP\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\HP\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\HP\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\HP\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\HP\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\HP\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\HP\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\HP\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\HP\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-karate\2.22.2\allure-karate-2.22.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-java-commons\2.22.2\allure-java-commons-2.22.2.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-model\2.22.2\allure-model-2.22.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-test-filter\2.22.2\allure-test-filter-2.22.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\HP\Desktop\karate\projet_karate_1\target\test-classes;C:\Users\HP\Desktop\karate\projet_karate_1\target\classes;C:\Users\HP\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\HP\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\HP\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\HP\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\HP\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\HP\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\HP\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\HP\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\HP\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\HP\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\HP\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\HP\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\HP\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\HP\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\HP\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\HP\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\HP\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\HP\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\HP\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\HP\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-karate\2.24.0\allure-karate-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\HP\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\HP"/>
     <property name="user.language" value="fr"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire5938167793727788417\surefirebooter15797604591512769121.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire15313796207991242539\surefirebooter4351121473237756402.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.20+8"/>
@@ -58,8 +58,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testParallel" classname="examples.ExamplesTest" time="5.98">
-    <failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: faker.book.title()&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.github.javafaker.Faker.book failed due to: Message not supported.&#10;- &lt;js&gt;.:program(Unnamed:1)&#10;&#10;classpath:examples/community/community.feature:8&#10;status code was: 404, expected: 200, response time in milliseconds: 204, url: https://api.efi-academy.com/public/employees/2, response: &#10;{&quot;message&quot;:&quot;Employee with id 2 not found.&quot;,&quot;code&quot;:404}&#10;classpath:examples/employees/employees.feature:27 ==&gt; expected: &lt;0&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="6.174">
+    <failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: faker.book.title()&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.github.javafaker.Faker.book failed due to: Message not supported.&#10;- &lt;js&gt;.:program(Unnamed:1)&#10;&#10;classpath:examples/community/community.feature:8&#10;status code was: 404, expected: 200, response time in milliseconds: 59, url: https://api.efi-academy.com/public/employees/2, response: &#10;{&quot;message&quot;:&quot;Employee with id 2 not found.&quot;,&quot;code&quot;:404}&#10;classpath:examples/employees/employees.feature:27 ==&gt; expected: &lt;0&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
 01: faker.book.title()
@@ -68,19 +68,19 @@ org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.g
 - <js>.:program(Unnamed:1)
 
 classpath:examples/community/community.feature:8
-status code was: 404, expected: 200, response time in milliseconds: 204, url: https://api.efi-academy.com/public/employees/2, response: 
+status code was: 404, expected: 200, response time in milliseconds: 59, url: https://api.efi-academy.com/public/employees/2, response: 
 {"message":"Employee with id 2 not found.","code":404}
 classpath:examples/employees/employees.feature:27 ==> expected: <0> but was: <2>
-	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:18)
 ]]></failure>
-    <system-out><![CDATA[15:42:10.952 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-15:42:10.967 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
-15:42:12.405 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:12.436 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:12.444 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:12.454 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:12.463 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:12.604 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:8
+    <system-out><![CDATA[16:26:23.078 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:26:23.092 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+16:26:24.544 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:24.597 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:24.604 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:24.612 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:24.621 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:24.763 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/community/community.feature:8
 * def titre = faker.book.title()
 js failed:
 >>>>
@@ -90,8 +90,8 @@ org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.g
 - <js>.:program(Unnamed:1)
 
 classpath:examples/community/community.feature:8
-15:42:12.628 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-15:42:13.208 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+16:26:24.794 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+16:26:25.378 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > GET https://jsonplaceholder.typicode.com/users
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
@@ -99,17 +99,7 @@ classpath:examples/community/community.feature:8
 1 > Accept-Encoding: gzip,deflate
 
 
-15:42:13.210 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST https://api.efi-academy.com/auth/login
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 42
-1 > Host: api.efi-academy.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-1 > Accept-Encoding: gzip,deflate
-{"username":"admin","password":"admin123"}
-
-15:42:13.210 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+16:26:25.379 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST https://jsonplaceholder.typicode.com/users
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 160
@@ -119,7 +109,7 @@ classpath:examples/community/community.feature:8
 1 > Accept-Encoding: gzip,deflate
 {"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-15:42:13.210 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+16:26:25.380 [pool-1-thread-4] DEBUG com.intuit.karate - request:
 1 > POST https://api.efi-academy.com/auth/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 42
@@ -129,7 +119,7 @@ classpath:examples/community/community.feature:8
 1 > Accept-Encoding: gzip,deflate
 {"username":"admin","password":"admin123"}
 
-15:42:13.210 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+16:26:25.380 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 1 > POST https://api.efi-academy.com/auth/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 42
@@ -139,9 +129,19 @@ classpath:examples/community/community.feature:8
 1 > Accept-Encoding: gzip,deflate
 {"username":"admin","password":"admin123"}
 
-15:42:13.801 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 584
+16:26:25.380 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.efi-academy.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.efi-academy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"admin123"}
+
+16:26:25.926 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 544
 1 < 200
-1 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+1 < Date: Mon, 31 Aug 2026 14:26:26 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Connection: keep-alive
 1 < access-control-allow-credentials: true
@@ -160,12 +160,12 @@ classpath:examples/community/community.feature:8
 1 < x-ratelimit-limit: 1000
 1 < x-ratelimit-remaining: 999
 1 < x-ratelimit-reset: 1785194663
-1 < Age: 16160
+1 < Age: 18812
 1 < Accept-Ranges: bytes
 1 < cf-cache-status: HIT
 1 < Server-Timing: cfCacheStatus;desc="HIT"
-1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=0
-1 < CF-RAY: a33c7511caf98705-CDG
+1 < Server-Timing: cfEdge;dur=9,cfOrigin;dur=0
+1 < CF-RAY: a33cb5d1dace58fb-CDG
 1 < alt-svc: h3=":443"; ma=86400
 [
   {
@@ -400,7 +400,7 @@ classpath:examples/community/community.feature:8
   }
 ]
 
-15:42:13.849 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+16:26:25.967 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 2 > GET https://jsonplaceholder.typicode.com/users/1
 2 > Host: jsonplaceholder.typicode.com
 2 > Connection: Keep-Alive
@@ -408,52 +408,9 @@ classpath:examples/community/community.feature:8
 2 > Accept-Encoding: gzip,deflate
 
 
-15:42:13.860 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 650
-1 < 201
-1 < Date: Mon, 31 Aug 2026 13:42:14 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 216
-1 < Connection: keep-alive
-1 < access-control-allow-credentials: true
-1 < access-control-expose-headers: Location
-1 < Cache-Control: no-cache
-1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
-1 < expires: -1
-1 < location: https://jsonplaceholder.typicode.com/users/11
-1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-1 < pragma: no-cache
-1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=eXL4fQTV7F2qIrMP2fsr8LDVA9sPHDLzgkzOMtXd7vg%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1788183734"}],"max_age":3600}
-1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=eXL4fQTV7F2qIrMP2fsr8LDVA9sPHDLzgkzOMtXd7vg%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1788183734"
-1 < Server: cloudflare
-1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 < via: 2.0 heroku-router
-1 < x-content-type-options: nosniff
-1 < x-powered-by: Express
-1 < x-ratelimit-limit: 1000
-1 < x-ratelimit-remaining: 998
-1 < x-ratelimit-reset: 1788183765
-1 < cf-cache-status: DYNAMIC
-1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=15,cfOrigin;dur=86
-1 < CF-RAY: a33c7511cb1d153f-CDG
-1 < alt-svc: h3=":443"; ma=86400
-{
-  "name": "Test User",
-  "username": "testuser",
-  "email": "test@user.com",
-  "address": {
-    "street": "Has No Name",
-    "suite": "Apt. 123",
-    "city": "Electri",
-    "zipcode": "54321-6789"
-  },
-  "id": 11
-}
-
-15:42:13.868 [pool-1-thread-1] INFO  com.intuit.karate - [print] created id is:  11 
-15:42:13.997 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 148
+16:26:26.025 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 58
 2 < 200
-2 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+2 < Date: Mon, 31 Aug 2026 14:26:26 GMT
 2 < Content-Type: application/json; charset=utf-8
 2 < Transfer-Encoding: chunked
 2 < Connection: keep-alive
@@ -473,11 +430,11 @@ classpath:examples/community/community.feature:8
 2 < x-ratelimit-limit: 1000
 2 < x-ratelimit-remaining: 999
 2 < x-ratelimit-reset: 1788172960
-2 < Age: 10785
+2 < Age: 13437
 2 < Server-Timing: cfCacheStatus;desc="HIT"
 2 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=0
 2 < cf-cache-status: HIT
-2 < CF-RAY: a33c75134cc6d10d-CDG
+2 < CF-RAY: a33cb5d2afee9e64-CDG
 2 < alt-svc: h3=":443"; ma=86400
 {
   "id": 1,
@@ -503,41 +460,119 @@ classpath:examples/community/community.feature:8
   }
 }
 
-15:42:14.205 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 994
+16:26:26.170 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 789
+1 < 201
+1 < Date: Mon, 31 Aug 2026 14:26:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < access-control-expose-headers: Location
+1 < Cache-Control: no-cache
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < expires: -1
+1 < location: https://jsonplaceholder.typicode.com/users/11
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8UMCF%2FOkq0kLAbZTZUbp4EdcfkXJq0JIP279X5P2W2I%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1788186386"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=8UMCF%2FOkq0kLAbZTZUbp4EdcfkXJq0JIP279X5P2W2I%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1788186386"
+1 < Server: cloudflare
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1788186405
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=18,cfOrigin;dur=260
+1 < CF-RAY: a33cb5d1de129ec9-CDG
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+16:26:26.175 [pool-1-thread-1] INFO  com.intuit.karate - [print] created id is:  11 
+16:26:26.369 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 989
 1 < 200
 1 < Server: nginx
-1 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+1 < Date: Mon, 31 Aug 2026 14:26:26 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 561
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < ETag: W/"231-+vAky16/iOFlM6pjnwuD2/cqfWc"
-{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODc4ODUzNH0.xR1FndyRi5MjO8w_wZ5pv9fNNuT5PMFmZI7koqmYl54","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+1 < ETag: W/"231-7y17ZmXB37QPxq2Otk0/fLPSQr8"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODYsImV4cCI6MTc4ODE4OTk4Nn0.5kX8cB3R6ynclcWXk7gggioxY7hFqgtzLPWtIMFr3jg","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODYsImV4cCI6MTc4ODc5MTE4Nn0.0hZJruHQn3B8V6hczb9k6X3-BgOLhBS8S0Wcmgzim_Q","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
 
-15:42:14.217 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+16:26:26.388 [pool-1-thread-3] DEBUG com.intuit.karate - request:
 2 > POST https://api.efi-academy.com/public/employees
 2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 167
+2 > Content-Length: 169
 2 > Host: api.efi-academy.com
 2 > Connection: Keep-Alive
 2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
 2 > Accept-Encoding: gzip,deflate
-{"firstName":"Alicjhjhe","lastName":"Dupont","email":"donovan.lesch@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"hilario.leffler@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
 
-15:42:14.394 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1184
+16:26:26.822 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 431
+2 < 201
+2 < Server: nginx
+2 < Date: Mon, 31 Aug 2026 14:26:27 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 309
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < ETag: W/"135-P08jvuhyG6tHuWyOdjE0whdjbdA"
+{"message":"Employee created.","data":{"id":850,"firstName":"Alicjhjhe","lastName":"Dupont","email":"hilario.leffler@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T14:26:27.087Z","updatedAt":"2026-08-31T14:26:27.087Z"}}
+
+16:26:26.822 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1442
 1 < 200
 1 < Server: nginx
-1 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+1 < Date: Mon, 31 Aug 2026 14:26:27 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 561
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < ETag: W/"231-+vAky16/iOFlM6pjnwuD2/cqfWc"
-{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODc4ODUzNH0.xR1FndyRi5MjO8w_wZ5pv9fNNuT5PMFmZI7koqmYl54","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+1 < ETag: W/"231-a7ZYxvE2o9sYmB45L7uKzJ/BHNQ"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODE4OTk4N30.yJi3NxNhMFif8nRSFkWOQy8A1IspXMdIeKukwvZALWA","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODc5MTE4N30.bpIIqs4cd3eRCv6S_r4KMpMLy6xhLFtKJyawCHQlEmo","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
 
-15:42:14.403 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+16:26:26.825 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1445
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 31 Aug 2026 14:26:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 561
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"231-a7ZYxvE2o9sYmB45L7uKzJ/BHNQ"
+{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODE4OTk4N30.yJi3NxNhMFif8nRSFkWOQy8A1IspXMdIeKukwvZALWA","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODc5MTE4N30.bpIIqs4cd3eRCv6S_r4KMpMLy6xhLFtKJyawCHQlEmo","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+
+16:26:26.832 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://api.efi-academy.com/api/employees
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODE4OTk4N30.yJi3NxNhMFif8nRSFkWOQy8A1IspXMdIeKukwvZALWA
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 170
+2 > Host: api.efi-academy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+2 > Accept-Encoding: gzip,deflate
+{"firstName":"Alicjhjhe","lastName":"Dupont","email":"sammie.dickinson@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
+
+16:26:26.834 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 2 > GET https://api.efi-academy.com/public/employees/2
 2 > Host: api.efi-academy.com
 2 > Connection: Keep-Alive
@@ -545,34 +580,32 @@ classpath:examples/community/community.feature:8
 2 > Accept-Encoding: gzip,deflate
 
 
-15:42:14.599 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1388
-1 < 200
-1 < Server: nginx
-1 < Date: Mon, 31 Aug 2026 13:42:14 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 561
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < ETag: W/"231-+vAky16/iOFlM6pjnwuD2/cqfWc"
-{"message":"Login successful.","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODc4ODUzNH0.xR1FndyRi5MjO8w_wZ5pv9fNNuT5PMFmZI7koqmYl54","tokenType":"Bearer","expiresIn":"1h","user":{"id":1,"username":"admin","role":"ADMIN","createdAt":"2026-05-12T12:16:07.196Z"}}
+16:26:26.872 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+3 > PUT https://api.efi-academy.com/public/employees/850
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 19
+3 > Host: api.efi-academy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+3 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
 
-15:42:14.603 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 386
+16:26:26.892 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 59
 2 < 201
 2 < Server: nginx
-2 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+2 < Date: Mon, 31 Aug 2026 14:26:27 GMT
 2 < Content-Type: application/json; charset=utf-8
-2 < Content-Length: 307
+2 < Content-Length: 310
 2 < Connection: keep-alive
 2 < X-Powered-By: Express
 2 < Access-Control-Allow-Origin: *
-2 < ETag: W/"133-QehK/DTpJjimN1fLPHM5P1nWm3w"
-{"message":"Employee created.","data":{"id":801,"firstName":"Alicjhjhe","lastName":"Dupont","email":"donovan.lesch@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T13:42:14.882Z","updatedAt":"2026-08-31T13:42:14.882Z"}}
+2 < ETag: W/"136-4Ow+YrnW9cxOEcT9KGjOLV65Oi4"
+{"message":"Employee created.","data":{"id":851,"firstName":"Alicjhjhe","lastName":"Dupont","email":"sammie.dickinson@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T14:26:27.214Z","updatedAt":"2026-08-31T14:26:27.214Z"}}
 
-15:42:14.609 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 204
+16:26:26.894 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 59
 2 < 404
 2 < Server: nginx
-2 < Date: Mon, 31 Aug 2026 13:42:14 GMT
+2 < Date: Mon, 31 Aug 2026 14:26:27 GMT
 2 < Content-Type: application/json; charset=utf-8
 2 < Content-Length: 54
 2 < Connection: keep-alive
@@ -581,24 +614,14 @@ classpath:examples/community/community.feature:8
 2 < ETag: W/"36-MNRTi8Bo22zxHGJ08qJyex7C2Tg"
 {"message":"Employee with id 2 not found.","code":404}
 
-15:42:14.609 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:27
+16:26:26.895 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/employees/employees.feature:27
 Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 204, url: https://api.efi-academy.com/public/employees/2, response: 
+status code was: 404, expected: 200, response time in milliseconds: 59, url: https://api.efi-academy.com/public/employees/2, response: 
 {"message":"Employee with id 2 not found.","code":404}
 classpath:examples/employees/employees.feature:27
-15:42:14.609 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-2 > POST https://api.efi-academy.com/api/employees
-2 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 169
-2 > Host: api.efi-academy.com
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-2 > Accept-Encoding: gzip,deflate
-{"firstName":"Alicjhjhe","lastName":"Dupont","email":"winston.lakin@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15","status":"ACTIVE"}
-
-15:42:14.636 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-3 > PUT https://api.efi-academy.com/public/employees/801
+16:26:26.912 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+3 > PUT https://api.efi-academy.com/api/employees/851
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODE4OTk4N30.yJi3NxNhMFif8nRSFkWOQy8A1IspXMdIeKukwvZALWA
 3 > Content-Type: application/json; charset=UTF-8
 3 > Content-Length: 19
 3 > Host: api.efi-academy.com
@@ -607,84 +630,20 @@ classpath:examples/employees/employees.feature:27
 3 > Accept-Encoding: gzip,deflate
 {"firstName":"Lam"}
 
-15:42:14.782 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 171
-2 < 201
-2 < Server: nginx
-2 < Date: Mon, 31 Aug 2026 13:42:15 GMT
-2 < Content-Type: application/json; charset=utf-8
-2 < Content-Length: 309
-2 < Connection: keep-alive
-2 < X-Powered-By: Express
-2 < Access-Control-Allow-Origin: *
-2 < ETag: W/"135-phlKMJSzJOJvFMMLE34wrZLngyo"
-{"message":"Employee created.","data":{"id":802,"firstName":"Alicjhjhe","lastName":"Dupont","email":"winston.lakin@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T13:42:15.066Z","updatedAt":"2026-08-31T13:42:15.066Z"}}
-
-15:42:14.787 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 151
+16:26:26.947 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 74
 3 < 200
 3 < Server: nginx
-3 < Date: Mon, 31 Aug 2026 13:42:15 GMT
-3 < Content-Type: application/json; charset=utf-8
-3 < Content-Length: 301
-3 < Connection: keep-alive
-3 < X-Powered-By: Express
-3 < Access-Control-Allow-Origin: *
-3 < ETag: W/"12d-7zXy8NTgwTjwl8huQ/bDGFK5Kr4"
-{"message":"Employee updated.","data":{"id":801,"firstName":"Lam","lastName":"Dupont","email":"donovan.lesch@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T13:42:14.882Z","updatedAt":"2026-08-31T13:42:15.075Z"}}
-
-15:42:14.793 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-4 > DELETE https://api.efi-academy.com/public/employees/801
-4 > Content-Type: application/json; charset=UTF-8
-4 > Content-Length: 19
-4 > Host: api.efi-academy.com
-4 > Connection: Keep-Alive
-4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-4 > Accept-Encoding: gzip,deflate
-{"firstName":"Lam"}
-
-15:42:14.799 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-3 > PUT https://api.efi-academy.com/api/employees/802
-3 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE
-3 > Content-Type: application/json; charset=UTF-8
-3 > Content-Length: 19
-3 > Host: api.efi-academy.com
-3 > Connection: Keep-Alive
-3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
-3 > Accept-Encoding: gzip,deflate
-{"firstName":"Lam"}
-
----------------------------------------------------------
-feature: classpath:examples/community/community.feature
-scenarios:  1 | passed:  0 | failed:  1 | time: 0,1482
----------------------------------------------------------
-
-15:42:14.844 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
-15:42:14.875 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 82
-4 < 200
-4 < Server: nginx
-4 < Date: Mon, 31 Aug 2026 13:42:15 GMT
-4 < Content-Type: application/json; charset=utf-8
-4 < Content-Length: 35
-4 < Connection: keep-alive
-4 < X-Powered-By: Express
-4 < Access-Control-Allow-Origin: *
-4 < ETag: W/"23-Y7IYRufLqKkM/3yYkgVOgbm5iC0"
-{"message":"Employee 801 deleted."}
-
-15:42:14.884 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 83
-3 < 200
-3 < Server: nginx
-3 < Date: Mon, 31 Aug 2026 13:42:15 GMT
+3 < Date: Mon, 31 Aug 2026 14:26:27 GMT
 3 < Content-Type: application/json; charset=utf-8
 3 < Content-Length: 303
 3 < Connection: keep-alive
 3 < X-Powered-By: Express
 3 < Access-Control-Allow-Origin: *
-3 < ETag: W/"12f-z5gp2K0k9w532+4o0DvQeTLHY4o"
-{"message":"Employee updated.","data":{"id":802,"firstName":"Lam","lastName":"Dupont","email":"winston.lakin@hotmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T13:42:15.066Z","updatedAt":"2026-08-31T13:42:15.173Z"}}
+3 < ETag: W/"12f-OTx5q4gKoiLPRQ82i/FnyhWcco8"
+{"message":"Employee updated.","data":{"id":850,"firstName":"Lam","lastName":"Dupont","email":"hilario.leffler@yahoo.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T14:26:27.087Z","updatedAt":"2026-08-31T14:26:27.269Z"}}
 
-15:42:14.893 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-4 > DELETE https://api.efi-academy.com/public/employees/802
-4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODM3MzQsImV4cCI6MTc4ODE4NzMzNH0.ZD6vhrFrWIiWNeVobzwXTMS-Vmnp-WUIKOuqtKSP9NE
+16:26:26.957 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+4 > DELETE https://api.efi-academy.com/public/employees/850
 4 > Content-Type: application/json; charset=UTF-8
 4 > Content-Length: 19
 4 > Host: api.efi-academy.com
@@ -693,34 +652,82 @@ scenarios:  1 | passed:  0 | failed:  1 | time: 0,1482
 4 > Accept-Encoding: gzip,deflate
 {"firstName":"Lam"}
 
-15:42:14.987 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 92
+16:26:26.982 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 69
+3 < 200
+3 < Server: nginx
+3 < Date: Mon, 31 Aug 2026 14:26:27 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 304
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < ETag: W/"130-46ezzldUUK6T2sCoToeT/mvbUzw"
+{"message":"Employee updated.","data":{"id":851,"firstName":"Lam","lastName":"Dupont","email":"sammie.dickinson@gmail.com","position":"Software Engineer","salary":55000,"hireDate":"2022-01-15T00:00:00.000Z","status":"ACTIVE","createdAt":"2026-08-31T14:26:27.214Z","updatedAt":"2026-08-31T14:26:27.305Z"}}
+
+16:26:26.995 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+4 > DELETE https://api.efi-academy.com/public/employees/851
+4 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3ODgxODYzODcsImV4cCI6MTc4ODE4OTk4N30.yJi3NxNhMFif8nRSFkWOQy8A1IspXMdIeKukwvZALWA
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 19
+4 > Host: api.efi-academy.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.20)
+4 > Accept-Encoding: gzip,deflate
+{"firstName":"Lam"}
+
+16:26:27.022 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 64
 4 < 200
 4 < Server: nginx
-4 < Date: Mon, 31 Aug 2026 13:42:15 GMT
+4 < Date: Mon, 31 Aug 2026 14:26:27 GMT
 4 < Content-Type: application/json; charset=utf-8
 4 < Content-Length: 35
 4 < Connection: keep-alive
 4 < X-Powered-By: Express
 4 < Access-Control-Allow-Origin: *
-4 < ETag: W/"23-yw6fFwYiN/zrtL7r+FE6XRevUcM"
-{"message":"Employee 802 deleted."}
+4 < ETag: W/"23-HrVjm+MQQZXT15UFn/nJUfFURhQ"
+{"message":"Employee 850 deleted."}
 
+16:26:27.065 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 70
+4 < 200
+4 < Server: nginx
+4 < Date: Mon, 31 Aug 2026 14:26:27 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Content-Length: 35
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < ETag: W/"23-a88/tIYMffS+21xUelt+6Q8qoPY"
+{"message":"Employee 851 deleted."}
+
+---------------------------------------------------------
+feature: classpath:examples/community/community.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0,1316
+---------------------------------------------------------
+
+16:26:27.248 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/community/community.feature
+16:26:27.249 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 0741904a-f910-45ee-a39a-0e462aeafc36 not found
 ---------------------------------------------------------
 feature: classpath:examples/employees/employees.feature
-scenarios:  3 | passed:  2 | failed:  1 | time: 7,0940
+scenarios:  3 | passed:  2 | failed:  1 | time: 7,0716
 ---------------------------------------------------------
 
-15:42:15.464 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/employees/employees.feature
+16:26:28.030 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/employees/employees.feature
+16:26:28.032 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 0741904a-f910-45ee-a39a-0e462aeafc36 not found
+16:26:28.032 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 2c658325-b456-41c3-a8ad-957b25ac0878 not found
+16:26:28.032 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 6b73b038-4d65-40d3-8cde-80f3f4f3fe2f not found
+16:26:28.033 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid fce00ad8-a803-46e0-b0be-76b46f8e94e8 not found
+16:26:28.033 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 0ece1c22-1958-4096-a75e-b5f5bca3d03a not found
+16:26:28.033 [pool-2-thread-1] ERROR io.qameta.allure.AllureLifecycle - Could not write test case: test case with uuid 0da980ad-6d97-4ebd-be5e-eaf92fd685a2 not found
 ---------------------------------------------------------
 feature: classpath:examples/users/users.feature
-scenarios:  2 | passed:  2 | failed:  0 | time: 2,7853
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,7734
 ---------------------------------------------------------
 
-15:42:15.561 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/users/users.feature
+16:26:28.128 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/users/users.feature
 Karate version: 1.3.1
 ======================================================
-elapsed:   5,59 | threads:    5 | thread time: 10,03 
-features:     3 | skipped:    0 | efficiency: 0,36
+elapsed:   5,89 | threads:    5 | thread time: 9,98 
+features:     3 | skipped:    0 | efficiency: 0,34
 scenarios:    6 | passed:     4 | failed: 2
 ======================================================
 >>> failed features:
@@ -732,7 +739,7 @@ org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (title) on com.g
 - <js>.:program(Unnamed:1)
 
 classpath:examples/community/community.feature:8
-status code was: 404, expected: 200, response time in milliseconds: 204, url: https://api.efi-academy.com/public/employees/2, response: 
+status code was: 404, expected: 200, response time in milliseconds: 59, url: https://api.efi-academy.com/public/employees/2, response: 
 {"message":"Employee with id 2 not found.","code":404}
 classpath:examples/employees/employees.feature:27
 <<<

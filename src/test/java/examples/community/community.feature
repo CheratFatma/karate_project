@@ -26,7 +26,7 @@ Feature:
     
   @community
   Scenario: 
-    #2
+    #2 POST
     Given path 'v1/posts/share-event'
     * def body_event = 
     """
@@ -44,7 +44,7 @@ Feature:
     Then match response.data.contenu == body_event.contenu
     * def id = response.data.id
 
-    #3
+    #3 POST
     Given path 'v1/posts',id,'comments'
      * def body_comment = 
     """
@@ -60,7 +60,7 @@ Feature:
     Then status 201
     Then match response.success == true
 
-    #4
+    #4 DELETE
     Given path 'v1/posts',id,'like'
     * header Authorization = 'Bearer ' + token
     When method post
